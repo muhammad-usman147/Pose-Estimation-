@@ -34,14 +34,14 @@ while True:
             #drawing circle to check are the cx,cy pixels are calculated properly
             # cv2.circle(img,(cx,cy),10,(0,255,0),cv2.FILLED)
 
-            
+
 
     ct = time.time()
     #print(ct,pt)
 
     fps = 1/(ct - pt)
     pt = ct
-    cv2.putText(img,"Frame Rate"+str(int(fps)),(0,50),cv2.FONT_HERSHEY_COMPLEX,1,(255,0,0),1)
+    cv2.putText(img,"Frame Rate"+str(int(fps)),(0,50),cv2.FONT_HERSHEY_COMPLEX,1,(0,0,255),1)
 
     cv2.imshow("frame",img)
     cv2.waitKey(1) #for 1 millisecond delay
